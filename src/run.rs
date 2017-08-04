@@ -14,10 +14,10 @@ use std::io::{self, Write};
 /// CLI Runtime
 pub fn run() -> Result<i32> {
     let _matches = App::new(env!("CARGO_PKG_NAME"))
-                      .version(env!("CARGO_PKG_VERSION"))
-                      .author(env!("CARGO_PKG_AUTHORS"))
-                      .about("Prints 'Hello, Rustaceans!' to stdout")
-                      .get_matches();
+        .version(env!("CARGO_PKG_VERSION"))
+        .author(env!("CARGO_PKG_AUTHORS"))
+        .about("Prints 'Hello, Rustaceans!' to stdout")
+        .get_matches();
     writeln!(io::stdout(), "Hello, Rustaceans!")?;
     Ok(0)
 }
