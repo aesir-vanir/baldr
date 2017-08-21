@@ -8,6 +8,7 @@
 
 //! `baldr` 0.1.0
 #![deny(missing_docs)]
+#![cfg_attr(feature = "cargo-clippy", allow(use_self))]
 extern crate clap;
 #[macro_use]
 extern crate error_chain;
